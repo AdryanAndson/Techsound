@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Techsound: Som Para Todos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="img/tech.jpeg" alt="Logo da Techsound" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#doar">Doe Agora</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Techsound: Som Para Todos</h1>
+        <p>Ajude a trazer som para quem mais precisa!</p>
+        <a href="#doar" class="btn">Doe Agora</a>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre o Projeto</h2>
+            <p>O Techsound busca promover a doação de aparelhos auditivos e implantes cocleares para pessoas carentes de
+                todo o Brasil. Nossa missão é proporcionar um mundo mais inclusivo para quem não tem acesso a esses
+                recursos.</p>
+        </div>
+    </section>
+
+    <section id="doar">
+        <div class="container">
+            <h2>Faça uma Doação</h2>
+            <p>Contribua com o nosso projeto e ajude a trazer som para quem mais precisa.</p>
+
+            <form id="form-doacao" action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="valor">Valor da Doação (R$):</label>
+                <input type="number" id="valor" name="valor" min="10" placeholder="Ex: 50" required>
+
+                <label for="metodo-pagamento">Método de Pagamento:</label>
+                <select id="metodo-pagamento" name="metodo-pagamento" required>
+                    <option value="">Selecione</option>
+                    <option value="pix">PIX</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+
+                <button type="submit" class="btn">Doar Agora</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Seção de Contato corrigida e renomeada -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Envie sua mensagem e tire suas dúvidas sobre o projeto Techsound.</p>
+            <form action="envia-contato.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="Digite seu e-mail" required>
+
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="msg" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit" class="btn">Enviar sua mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Techsound. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
